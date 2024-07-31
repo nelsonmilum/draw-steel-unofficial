@@ -68,4 +68,32 @@ export class DrawSteelItem extends Item {
       return roll;
     }
   }
+
+  // /**
+  //  * Override for default artwork
+  //  * @override
+  //  */
+  // static getDefaultArtwork(itemData) {
+  
+  //   const defaultImages = {
+  //     equipment: 'systems/crown-and-skull/assets/icons/Black/Equipment.svg',
+  //     smallitem: 'systems/crown-and-skull/assets/icons/Black/SmallItem.svg',
+  //     largeitem: 'systems/crown-and-skull/assets/icons/Black/Equipment.svg',
+  //     skill: 'systems/crown-and-skull/assets/icons/Black/d20.svg',
+  //     spell: 'systems/crown-and-skull/assets/icons/Black/Spellbook.svg',
+  //     advancement: 'systems/crown-and-skull/assets/icons/Black/Spellbook.svg',
+  //     reward: 'systems/crown-and-skull/assets/icons/Black/Ring.svg',
+  //     flora: 'systems/crown-and-skull/assets/icons/Black/Herb.svg',
+  //     flaw: 'systems/crown-and-skull/assets/icons/Black/Skull.svg',
+  //     companion: 'systems/crown-and-skull/assets/icons/Black/Companion.svg',
+  //     ability: 'systems/crown-and-skull/assets/icons/Black/Ability.svg'
+  //   };
+
+  //   // Check if the item type exists in defaultImages object
+  //   if (defaultImages[itemData.type]) {
+  //     return { img: defaultImages[itemData.type] };
+  //   }
+    
+  //   return super.getDefaultArtwork(itemData);
+  // };
 }

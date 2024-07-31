@@ -33,7 +33,9 @@
     },
     "Item": {
       "item": "Item",
-      "feature": "Feature",
+      "kit": "Kit",
+      "kitsignatureability": "Kit Signature Ability",
+      "heroicability": "Heroic Ability",
       "spell": "Spell"
     }
   }

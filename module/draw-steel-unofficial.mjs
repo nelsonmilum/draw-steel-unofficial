@@ -48,7 +48,9 @@ Hooks.once('init', function () {
   CONFIG.Item.documentClass = DrawSteelItem;
   CONFIG.Item.dataModels = {
     item: models.DrawSteelItem,
-    feature: models.DrawSteelFeature,
+    kit: models.DrawSteelKit,
+    kitsignatureability: models.DrawSteelKitSignatureAbility,
+    heroicability: models.DrawSteelHeroicAbility,
     spell: models.DrawSteelSpell
   }
 

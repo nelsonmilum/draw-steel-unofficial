@@ -35,6 +35,8 @@ export default class DrawSteelCharacter extends DrawSteelActorBase {
     
     // generate the Winded value based on Half the Stamina value
     this.stamina.winded = Math.floor(this.stamina.max / 2);
+    // generate the Max recoveries value based on 1/3 the Stamina value
+    this.recoveries.max = Math.floor(this.stamina.max / 3);
   }
 
   getRollData() {

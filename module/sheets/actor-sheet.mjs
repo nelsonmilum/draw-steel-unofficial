@@ -18,7 +18,7 @@ export class DrawSteelActorSheet extends ActorSheet {
         {
           navSelector: '.sheet-tabs',
           contentSelector: '.sheet-body',
-          initial: 'features',
+          initial: 'kits',
         },
       ],
     });
@@ -94,7 +94,7 @@ export class DrawSteelActorSheet extends ActorSheet {
   _prepareItems(context) {
     // Initialize containers.
     const gear = [];
-    const features = [];
+    const kits = [];
     const spells = {
       0: [],
       1: [],
@@ -115,9 +115,9 @@ export class DrawSteelActorSheet extends ActorSheet {
       if (i.type === 'item') {
         gear.push(i);
       }
-      // Append to features.
-      else if (i.type === 'feature') {
-        features.push(i);
+      // Append to kits.
+      else if (i.type === 'kit') {
+        kits.push(i);
       }
       // Append to spells.
       else if (i.type === 'spell') {
@@ -129,7 +129,7 @@ export class DrawSteelActorSheet extends ActorSheet {
 
     // Assign and return
     context.gear = gear;
-    context.features = features;
+    context.kits = kits;
     context.spells = spells;
   }
 

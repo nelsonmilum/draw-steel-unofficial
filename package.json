@@ -1,6 +1,6 @@
 {
   "name": "draw-steel-unofficial",
-  "version": "2.0.0",
+  "version": "0.0.2",
   "description": "CSS compiler for the DrawSteel system",
   "scripts": {
     "build": "sass src/scss/draw-steel-unofficial.scss css/draw-steel-unofficial.css --style=expanded --no-source-map",
@@ -9,7 +9,7 @@
   "browserslist": [
     "last 3 versions"
   ],
-  "author": "Asacolips",
+  "author": "Nelson",
   "license": "MIT",
   "private": true,
   "devDependencies": {

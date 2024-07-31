@@ -3,6 +3,6 @@
     "types": ["character", "npc"]
   },
   "Item": {
-    "types": ["item", "feature", "kit", "spell"]
+    "types": ["item", "kit", "kitsignatureability", "heroicability", "spell"]
   }
 }
