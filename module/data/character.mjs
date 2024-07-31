@@ -33,8 +33,8 @@ export default class DrawSteelCharacter extends DrawSteelActorBase {
       // Handle ability label localization.
       this.abilities[key].label = game.i18n.localize(CONFIG.DRAW_STEEL.abilities[key]) ?? key;
     }
-    //generate the Winded value based on Half the Health(Stamina) value
-    this.health.winded = Math.floor(this.health.max / 2);
+    //generate the Winded value based on Half the Stamina value
+    this.stamina.winded = Math.floor(this.stamina.max / 2);
   }
 
   getRollData() {
