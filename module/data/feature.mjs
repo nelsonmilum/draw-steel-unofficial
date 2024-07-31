@@ -1,3 +1,5 @@
 import DrawSteelItemBase from "./item-base.mjs";
 
-export default class DrawSteelFeature extends DrawSteelItemBase {}
+export default class DrawSteelFeature extends DrawSteelItemBase {
+
+}

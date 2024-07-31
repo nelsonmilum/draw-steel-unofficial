@@ -7,4 +7,5 @@ export {default as DrawSteelNPC} from "./npc.mjs";
 export {default as DrawSteelItemBase} from "./item-base.mjs";
 export {default as DrawSteelItem} from "./item.mjs";
 export {default as DrawSteelFeature} from "./feature.mjs";
+export {default as DrawSteelKit} from "./kit.mjs";
 export {default as DrawSteelSpell} from "./spell.mjs";

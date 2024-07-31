@@ -16,9 +16,7 @@ export default class DrawSteelCharacter extends DrawSteelActorBase {
     // Iterate over ability names and create a new SchemaField for each.
     schema.abilities = new fields.SchemaField(Object.keys(CONFIG.DRAW_STEEL.abilities).reduce((obj, ability) => {
       obj[ability] = new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 10, min: 0 }),
-        // MCDM Skips the middlmen and uses the stat value directly.
-        // mod: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: -5, max: 5 }),
         label: new fields.StringField({ required: true, blank: true })
       });
       return obj;
@@ -33,7 +31,9 @@ export default class DrawSteelCharacter extends DrawSteelActorBase {
       // Handle ability label localization.
       this.abilities[key].label = game.i18n.localize(CONFIG.DRAW_STEEL.abilities[key]) ?? key;
     }
-    //generate the Winded value based on Half the Stamina value
+    // modify max stamina with kit benefit
+    
+    // generate the Winded value based on Half the Stamina value
     this.stamina.winded = Math.floor(this.stamina.max / 2);
   }
 

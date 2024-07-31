@@ -17,6 +17,14 @@ export default class DrawSteelItem extends DrawSteelItemBase {
       diceBonus: new fields.StringField({ initial: "+@mgt.value+ceil(@lvl / 2)" })
     })
 
+    // Tiered result system for rolls, easier than doing math, easier to control bounded accuracy.
+    // **Pending**
+    schema.rolltier = new fields.SchemaField({
+      rolllow: new fields.NumberField({ ...requiredInteger, initial: 11 }),
+      rollmed: new fields.NumberField({ initial: "< 17, > 11" }),
+      rolltop: new fields.NumberField({ ...requiredInteger, initial: 17 })
+    })
+
     schema.formula = new fields.StringField({ blank: true });
 
     return schema;
