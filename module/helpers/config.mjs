@@ -5,19 +5,17 @@ export const DRAW_STEEL = {};
  * @type {Object}
  */
 DRAW_STEEL.abilities = {
-  str: 'DRAW_STEEL.Ability.Str.long',
-  dex: 'DRAW_STEEL.Ability.Dex.long',
-  con: 'DRAW_STEEL.Ability.Con.long',
-  int: 'DRAW_STEEL.Ability.Int.long',
-  wis: 'DRAW_STEEL.Ability.Wis.long',
-  cha: 'DRAW_STEEL.Ability.Cha.long',
+  mgt: 'DRAW_STEEL.Ability.Mgt.long',
+  agl: 'DRAW_STEEL.Ability.Agl.long',
+  rea: 'DRAW_STEEL.Ability.Rea.long',
+  inu: 'DRAW_STEEL.Ability.Inu.long',
+  prs: 'DRAW_STEEL.Ability.Prs.long',
 };
 
 DRAW_STEEL.abilityAbbreviations = {
-  str: 'DRAW_STEEL.Ability.Str.abbr',
-  dex: 'DRAW_STEEL.Ability.Dex.abbr',
-  con: 'DRAW_STEEL.Ability.Con.abbr',
-  int: 'DRAW_STEEL.Ability.Int.abbr',
-  wis: 'DRAW_STEEL.Ability.Wis.abbr',
-  cha: 'DRAW_STEEL.Ability.Cha.abbr',
+  mgt: 'DRAW_STEEL.Ability.Mgt.abbr',
+  agl: 'DRAW_STEEL.Ability.Agl.abbr',
+  rea: 'DRAW_STEEL.Ability.Rea.abbr',
+  inu: 'DRAW_STEEL.Ability.Inu.abbr',
+  prs: 'DRAW_STEEL.Ability.Prs.abbr',
 };

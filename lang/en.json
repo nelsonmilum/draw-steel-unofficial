@@ -1,12 +1,11 @@
 {
   "DRAW_STEEL": {
     "Ability": {
-      "Str": { "long": "Strength", "abbr": "str" },
-      "Con": { "long": "Constitution", "abbr": "con" },
-      "Dex": { "long": "Dexterity", "abbr": "dex" },
-      "Int": { "long": "Intelligence", "abbr": "int" },
-      "Wis": { "long": "Wisdom", "abbr": "wis" },
-      "Cha": { "long": "Charisma", "abbr": "cha" }
+      "Mgt": { "long": "Might", "abbr": "mgt" },
+      "Agl": { "long": "Agility", "abbr": "agl" },
+      "Rea": { "long": "Reason", "abbr": "rea" },
+      "Inu": { "long": "Intuition", "abbr": "inu" },
+      "Prs": { "long": "Presence", "abbr": "prs" }
     },
     "SheetLabels": {
       "Actor": "DrawSteel Actor Sheet",
