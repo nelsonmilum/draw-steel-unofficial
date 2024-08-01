@@ -13,16 +13,8 @@ export default class DrawSteelItem extends DrawSteelItemBase {
     // Break down roll formula into three independent fields
     schema.roll = new fields.SchemaField({
       diceNum: new fields.NumberField({ ...requiredInteger, initial: 1, min: 1 }),
-      diceSize: new fields.StringField({ initial: "2d10" }),
-      diceBonus: new fields.StringField({ initial: "+@mgt.value+ceil(@lvl / 2)" })
-    })
-
-    // Tiered result system for rolls, easier than doing math, easier to control bounded accuracy.
-    // **Pending**
-    schema.rolltier = new fields.SchemaField({
-      rolllow: new fields.NumberField({ ...requiredInteger, initial: 11 }),
-      rollmed: new fields.NumberField({ initial: "< 17, > 11" }),
-      rolltop: new fields.NumberField({ ...requiredInteger, initial: 17 })
+      diceSize: new fields.StringField({ initial: "d20" }),
+      diceBonus: new fields.StringField({ initial: "+@str.mod+ceil(@lvl / 2)" })
     })
 
     schema.formula = new fields.StringField({ blank: true });

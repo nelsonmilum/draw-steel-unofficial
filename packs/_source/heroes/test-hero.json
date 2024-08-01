@@ -1,0 +1,319 @@
+{
+  "name": "Character",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "stamina": {
+      "value": 0,
+      "max": 10
+    },
+    "recoveries": {
+      "value": 0,
+      "max": 4
+    },
+    "size": {
+      "value": 1
+    },
+    "weight": {
+      "value": 1
+    },
+    "reach": {
+      "value": 1
+    },
+    "speed": {
+      "value": 5
+    },
+    "stability": {
+      "value": 1
+    },
+    "biography": "",
+    "attributes": {
+      "level": {
+        "value": 1
+      }
+    },
+    "abilities": {
+      "mgt": {
+        "value": 5,
+        "label": ""
+      },
+      "agl": {
+        "value": 1,
+        "label": ""
+      },
+      "rea": {
+        "value": 1,
+        "label": ""
+      },
+      "inu": {
+        "value": 0,
+        "label": ""
+      },
+      "prs": {
+        "value": 2,
+        "label": ""
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Character",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "stamina"
+    },
+    "bar2": {
+      "attribute": "recoveries"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "New Kitsignatureability",
+      "type": "kitsignatureability",
+      "system": {
+        "value": {
+          "keywords": "",
+          "type": "",
+          "distance": "",
+          "target": ""
+        }
+      },
+      "_id": "m7kzuoNjnn9ESXIt",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "tLvYQ2hrDawKLbJI": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "draw-steel-unofficial",
+        "systemVersion": "0.0.2",
+        "createdTime": 1722467387730,
+        "modifiedTime": 1722467387730,
+        "lastModifiedBy": "tLvYQ2hrDawKLbJI"
+      }
+    },
+    {
+      "name": "New Heroicability",
+      "type": "heroicability",
+      "system": {
+        "value": {
+          "cost": 0,
+          "keywords": "",
+          "type": "",
+          "distance": "",
+          "target": ""
+        }
+      },
+      "_id": "cYa5qediimBNjy1i",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "tLvYQ2hrDawKLbJI": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "draw-steel-unofficial",
+        "systemVersion": "0.0.2",
+        "createdTime": 1722467390089,
+        "modifiedTime": 1722467390089,
+        "lastModifiedBy": "tLvYQ2hrDawKLbJI"
+      }
+    },
+    {
+      "name": "New Kit",
+      "type": "kit",
+      "system": {
+        "kit": {
+          "type": "",
+          "equipment": "",
+          "meleeweapondmg": {
+            "low": 0,
+            "mid": 0,
+            "top": 0
+          },
+          "rangedweapondmg": {
+            "low": 0,
+            "mid": 0,
+            "top": 0
+          },
+          "magicdmg": {
+            "low": 0,
+            "mid": 0,
+            "top": 0
+          }
+        }
+      },
+      "_id": "b9cobCFT0J78zrdK",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [
+        {
+          "name": "New Active Effect",
+          "img": "icons/svg/aura.svg",
+          "origin": "Actor.SFLRqf64NXe6hGlk.Item.b9cobCFT0J78zrdK",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "_id": "5oenz6xFCM6JE0mg",
+          "type": "base",
+          "system": {},
+          "changes": [
+            {
+              "key": "system.stamina.max",
+              "mode": 2,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.330",
+            "systemId": "draw-steel-unofficial",
+            "systemVersion": "0.0.2",
+            "createdTime": 1722529296129,
+            "modifiedTime": 1722529325202,
+            "lastModifiedBy": "tLvYQ2hrDawKLbJI"
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "tLvYQ2hrDawKLbJI": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "draw-steel-unofficial",
+        "systemVersion": "0.0.2",
+        "createdTime": 1722472543540,
+        "modifiedTime": 1722472543540,
+        "lastModifiedBy": "tLvYQ2hrDawKLbJI"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "world",
+      "system": "draw-steel-unofficial",
+      "coreVersion": "12.330",
+      "systemVersion": "0.0.2"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.330",
+    "systemId": "draw-steel-unofficial",
+    "systemVersion": "0.0.2",
+    "createdTime": 1722458191067,
+    "modifiedTime": 1722529330213,
+    "lastModifiedBy": "tLvYQ2hrDawKLbJI"
+  }
+}

@@ -6,9 +6,7 @@
 export const preloadHandlebarsTemplates = async function () {
   return loadTemplates([
     // Actor partials.
-    'systems/draw-steel-unofficial/templates/actor/parts/actor-kits.hbs',
-    'systems/draw-steel-unofficial/templates/actor/parts/actor-kitsignatureabilities.hbs',
-    'systems/draw-steel-unofficial/templates/actor/parts/actor-heroicabilities.hbs',
+    'systems/draw-steel-unofficial/templates/actor/parts/actor-features.hbs',
     'systems/draw-steel-unofficial/templates/actor/parts/actor-items.hbs',
     'systems/draw-steel-unofficial/templates/actor/parts/actor-spells.hbs',
     'systems/draw-steel-unofficial/templates/actor/parts/actor-effects.hbs',

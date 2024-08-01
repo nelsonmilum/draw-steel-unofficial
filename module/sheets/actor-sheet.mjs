@@ -18,7 +18,7 @@ export class DrawSteelActorSheet extends ActorSheet {
         {
           navSelector: '.sheet-tabs',
           contentSelector: '.sheet-body',
-          initial: 'kits',
+          initial: 'features',
         },
       ],
     });
@@ -94,7 +94,7 @@ export class DrawSteelActorSheet extends ActorSheet {
   _prepareItems(context) {
     // Initialize containers.
     const gear = [];
-    const kits = [];
+    const features = [];
     const spells = {
       0: [],
       1: [],
@@ -115,9 +115,9 @@ export class DrawSteelActorSheet extends ActorSheet {
       if (i.type === 'item') {
         gear.push(i);
       }
-      // Append to kits.
-      else if (i.type === 'kit') {
-        kits.push(i);
+      // Append to features.
+      else if (i.type === 'feature') {
+        features.push(i);
       }
       // Append to spells.
       else if (i.type === 'spell') {
@@ -129,7 +129,7 @@ export class DrawSteelActorSheet extends ActorSheet {
 
     // Assign and return
     context.gear = gear;
-    context.kits = kits;
+    context.features = features;
     context.spells = spells;
   }
 
@@ -196,7 +196,7 @@ export class DrawSteelActorSheet extends ActorSheet {
     // Get the type of item to create.
     const type = header.dataset.type;
     // Grab any data associated with this control.
-    const data = foundry.utils.duplicate(header.dataset);
+    const data = duplicate(header.dataset);
     // Initialize a default name.
     const name = `New ${type.capitalize()}`;
     // Prepare the item object.

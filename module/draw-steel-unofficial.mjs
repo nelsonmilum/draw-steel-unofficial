@@ -26,14 +26,14 @@ Hooks.once('init', function () {
   // Add custom constants for configuration.
   CONFIG.DRAW_STEEL = DRAW_STEEL;
 
-  /**
-   * Set an initiative formula for the system
-   * @type {String}
-   */
-  CONFIG.Combat.initiative = {
-    formula: '1d10',
-    decimals: 2,
-  };
+  // /**
+  //  * Set an initiative formula for the system
+  //  * @type {String}
+  //  */
+  // CONFIG.Combat.initiative = {
+  //   formula: '1d20 + @abilities.agl.mod',
+  //   decimals: 2,
+  // };
 
   // Define custom Document and DataModel classes
   CONFIG.Actor.documentClass = DrawSteelActor;
@@ -48,9 +48,7 @@ Hooks.once('init', function () {
   CONFIG.Item.documentClass = DrawSteelItem;
   CONFIG.Item.dataModels = {
     item: models.DrawSteelItem,
-    kit: models.DrawSteelKit,
-    kitsignatureability: models.DrawSteelKitSignatureAbility,
-    heroicability: models.DrawSteelHeroicAbility,
+    feature: models.DrawSteelFeature,
     spell: models.DrawSteelSpell
   }
 
@@ -80,8 +78,8 @@ Hooks.once('init', function () {
 /* -------------------------------------------- */
 
 // If you need to add Handlebars helpers, here is a useful example:
-Handlebars.registerHelper('toLowerCase', function (strng) {
-  return strng.toLowerCase();
+Handlebars.registerHelper('toLowerCase', function (str) {
+  return str.toLowerCase();
 });
 
 /* -------------------------------------------- */
