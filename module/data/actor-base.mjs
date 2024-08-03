@@ -31,27 +31,22 @@ export default class DrawSteelActorBase extends foundry.abstract.TypeDataModel {
       }, {})
     );
 
-    schema.attributes = new fields.SchemaField({
-      level: new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 1 }),
-      }),
-      size: new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 1 }),
-      }),
-      weight: new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 1 }),
-      }),
-      reach: new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 1 }),
-      }),
-      stability: new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 1 }),
-      }),
-      speed: new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 1 }),
-      }),
-      traits: new fields.StringField({ required: true, blank: true }),
-    });
+
+    // Iterate over attribute names and create a new SchemaField for each.
+    schema.attributes = new fields.SchemaField(
+      Object.keys(CONFIG.DRAW_STEEL.attributes).reduce((obj, attribute) => {
+        obj[attribute] = new fields.SchemaField({
+          value: new fields.NumberField({
+            ...requiredInteger,
+            initial: 0,
+            min: 0,
+          }),
+          label: new fields.StringField({ required: true, blank: true }),
+        });
+        return obj;
+      }, {})
+    );
+    
     return schema;
   }
 }

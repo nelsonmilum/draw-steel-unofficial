@@ -13,7 +13,7 @@ export default class DrawSteelCharacter extends DrawSteelActorBase {
 
     schema.victories = new fields.SchemaField ({
       value: new fields.NumberField({ ...requiredInteger, initial: 1, min: 0 }),
-    })
+    });
 
     return schema;
   }
@@ -24,7 +24,14 @@ export default class DrawSteelCharacter extends DrawSteelActorBase {
       // Handle ability label localization.
       this.abilities[key].label =
         game.i18n.localize(CONFIG.DRAW_STEEL.abilities[key]) ?? key;
-    }
+    };
+
+    // Loop through Attributes, and add their labels to our sheet output.
+    for (const key in this.attributes) {
+      // Handle ability label localization.
+      this.attributes[key].label =
+        game.i18n.localize(CONFIG.DRAW_STEEL.attributes[key]) ?? key;
+    };
 
     this.recoveries.max = Math.floor(this.stamina.max / 3);
     this.stamina.winded = Math.floor(this.stamina.max / 2);
@@ -39,9 +46,9 @@ export default class DrawSteelCharacter extends DrawSteelActorBase {
       for (let [k, v] of Object.entries(this.abilities)) {
         data[k] = foundry.utils.deepClone(v);
       }
-    }
+    };
 
-    data.lvl = this.attributes.level.value;
+    data.lvl = this.attributes.lvl.value;
 
     return data;
   }

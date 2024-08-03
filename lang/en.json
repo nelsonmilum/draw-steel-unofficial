@@ -7,6 +7,14 @@
       "Inu": { "long": "Intuition", "abbr": "inu" },
       "Prs": { "long": "Presence", "abbr": "prs" }
     },
+    "Attribute": {
+      "Lvl": { "long": "Level", "abbr": "lvl" },
+      "Siz": { "long": "Size", "abbr": "siz" },
+      "Wgt": { "long": "Weight", "abbr": "wgt" },
+      "Rch": { "long": "Reach", "abbr": "rch" },
+      "Stb": { "long": "Stability", "abbr": "stb" },
+      "Spd": { "long": "Speed", "abbr": "spd" }
+    },
     "SheetLabels": {
       "Actor": "DrawSteel Actor Sheet",
       "Item": "DrawSteel Item Sheet"

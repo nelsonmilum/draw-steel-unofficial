@@ -12,6 +12,15 @@ export default class DrawSteelNPC extends DrawSteelActorBase {
       min: 0,
     });
 
+    schema.traits = new fields.SchemaField({
+      first: new fields.StringField({ required: true, blank: true }),
+      second: new fields.StringField({ required: false, blank: true }),
+      third: new fields.StringField({ required: false, blank: true }),
+    })
+
+    schema.role = new fields.StringField ({ required: true, blank: true })
+    schema.captain = new fields.StringField ({ required: true, initial: "true" })
+
     return schema;
   }
 
@@ -22,6 +31,14 @@ export default class DrawSteelNPC extends DrawSteelActorBase {
       this.abilities[key].label =
         game.i18n.localize(CONFIG.DRAW_STEEL.abilities[key]) ?? key;
     }
+    
+    // Loop through Attributes, and add their labels to our sheet output.
+    for (const key in this.attributes) {
+      // Handle ability label localization.
+      this.attributes[key].label =
+        game.i18n.localize(CONFIG.DRAW_STEEL.attributes[key]) ?? key;
+    };
+
     this.stamina.winded = Math.floor(this.stamina.max / 2);
   }
 }
