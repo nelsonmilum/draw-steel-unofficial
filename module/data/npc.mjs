@@ -31,7 +31,7 @@ export default class DrawSteelNPC extends DrawSteelActorBase {
       this.abilities[key].label =
         game.i18n.localize(CONFIG.DRAW_STEEL.abilities[key]) ?? key;
     }
-    
+
     // Loop through Attributes, and add their labels to our sheet output.
     for (const key in this.attributes) {
       // Handle ability label localization.
