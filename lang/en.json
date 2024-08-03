@@ -37,11 +37,13 @@
   "TYPES": {
     "Actor": {
       "character": "Character",
+      "enviro": "Environmental Effect",
       "npc": "NPC"
     },
     "Item": {
       "item": "Item",
       "feature": "Feature",
+      "maneuver": "Maneuver",
       "spell": "Spell"
     }
   }

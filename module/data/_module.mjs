@@ -1,5 +1,6 @@
 // Export Actors
 export { default as DrawSteelActorBase } from "./actor-base.mjs";
+export { default as DrawSteelEnviro } from "./enviro.mjs";
 export { default as DrawSteelCharacter } from "./character.mjs";
 export { default as DrawSteelNPC } from "./npc.mjs";
 

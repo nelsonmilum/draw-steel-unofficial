@@ -52,6 +52,11 @@ export class DrawSteelActorSheet extends ActorSheet {
       this._prepareCharacterData(context);
     }
 
+    // Prepare enviro data and items.
+    if (actorData.type == 'enviro') {
+      this._prepareItems(context);
+      this._prepareEnviroData(context);
+    }
     // Prepare NPC data and items.
     if (actorData.type == 'npc') {
       this._prepareItems(context);
