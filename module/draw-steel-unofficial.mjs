@@ -26,14 +26,12 @@ Hooks.once('init', function () {
   // Add custom constants for configuration.
   CONFIG.DRAW_STEEL = DRAW_STEEL;
 
-  // /**
-  //  * Set an initiative formula for the system
-  //  * @type {String}
-  //  */
-  // CONFIG.Combat.initiative = {
-  //   formula: '1d20 + @abilities.agl.mod',
-  //   decimals: 2,
-  // };
+  /**
+   * Set an initiative formula for the system
+   * @type {String}
+   */
+  CONFIG.Combat.initiative = {
+  };
 
   // Define custom Document and DataModel classes
   CONFIG.Actor.documentClass = DrawSteelActor;
