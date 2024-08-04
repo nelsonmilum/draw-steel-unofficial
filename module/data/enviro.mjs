@@ -10,7 +10,6 @@ export default class DrawSteelEnviro extends DrawSteelActorBase {
   }
 
   prepareDerivedData() {
-    // Loop through ability scores, and add their labels to our sheet output.
     
   }
 

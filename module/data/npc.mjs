@@ -18,6 +18,12 @@ export default class DrawSteelNPC extends DrawSteelActorBase {
       third: new fields.StringField({ required: false, blank: true }),
     })
 
+    schema.freestrike = new fields.NumberField({
+      ...requiredInteger,
+      initial: 1,
+      min: 0,
+    });
+
     schema.role = new fields.StringField ({ required: true, blank: true })
     schema.captain = new fields.StringField ({ required: true, initial: "true" })
 
