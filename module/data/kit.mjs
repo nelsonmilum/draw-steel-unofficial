@@ -1,6 +1,6 @@
 import DrawSteelItemBase from "./item-base.mjs";
 
-export default class DrawSteelFeature extends DrawSteelItemBase {
+export default class DrawSteelKit extends DrawSteelItemBase {
 
   static defineSchema() {
     const fields = foundry.data.fields;

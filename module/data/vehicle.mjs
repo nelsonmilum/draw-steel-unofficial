@@ -1,6 +1,6 @@
 import DrawSteelActorBase from "./actor-base.mjs";
 
-export default class DrawSteelEnviro extends DrawSteelActorBase {
+export default class DrawSteelVehicle extends DrawSteelActorBase {
   static defineSchema() {
     const fields = foundry.data.fields;
     const requiredInteger = { required: true, nullable: false, integer: true };

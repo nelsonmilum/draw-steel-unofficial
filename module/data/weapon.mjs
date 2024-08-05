@@ -1,6 +1,6 @@
 import DrawSteelItemBase from "./item-base.mjs";
 
-export default class DrawSteelItem extends DrawSteelItemBase {
+export default class DrawSteelWeapon extends DrawSteelItemBase {
   static defineSchema() {
     const fields = foundry.data.fields;
     const requiredInteger = { required: true, nullable: false, integer: true };
