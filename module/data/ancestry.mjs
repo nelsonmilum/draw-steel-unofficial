@@ -35,7 +35,7 @@ export default class DrawSteelAncestry extends DrawSteelItemBase {
     // Loop through Attributes, and add their labels to our sheet output.
     for (const key in this.physicals) {
       // Handle ability label localization.
-      this.attributes[key].label =
+      this.physicals[key].label =
         game.i18n.localize(CONFIG.DRAW_STEEL.physicals[key]) ?? key;
     };
   }
