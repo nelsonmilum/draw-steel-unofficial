@@ -37,13 +37,25 @@
   "TYPES": {
     "Actor": {
       "character": "Character",
-      "enviro": "Environmental Effect",
-      "npc": "NPC"
+      "npc": "NPC",
+      "group": "Group",
+      "environment": "Environmental Effect",
+      "vehicle": "Vehicle"
     },
     "Item": {
       "item": "Item",
+      "weapon": "Weapon",
+      "equipment": "Equipment",
+      "consumable": "Consumable",
+      "loot": "Loot",
+      "ancestry": "Ancestry",
+      "career": "Career",
+      "culture": "Culture",
+      "complication": "Complication",
+      "class": "Class",
       "feature": "Feature",
-      "maneuver": "Maneuver",
+      "kit": "Kit",
+      "ability": "Ability",
       "spell": "Spell"
     }
   }

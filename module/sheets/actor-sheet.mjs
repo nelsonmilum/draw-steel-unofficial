@@ -51,15 +51,14 @@ export class DrawSteelActorSheet extends ActorSheet {
       this._prepareItems(context);
       this._prepareCharacterData(context);
     }
-
-    // Prepare enviro data and items.
-    if (actorData.type == 'enviro') {
-      this._prepareItems(context);
-      // this._prepareEnviroData(context);
-    }
     // Prepare NPC data and items.
     if (actorData.type == 'npc') {
       this._prepareItems(context);
+    }
+    // Prepare environment data and items.
+    if (actorData.type == 'environment') {
+      this._prepareItems(context);
+      // this._prepareEnviroData(context);
     }
 
     // Add roll data for TinyMCE editors.

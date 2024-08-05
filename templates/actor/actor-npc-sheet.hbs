@@ -90,9 +90,9 @@
 
     {{!-- Owned Features Tab --}}
     <div class="tab features" data-group="primary" data-tab="features">
+
       <section class="grid grid-3col">
         <aside class="sidebar">
-
           {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
           use both the "grid" and "grid-Ncol" class where "N" can be any number
           from 1 to 12 and will create that number of columns. --}}
@@ -105,11 +105,6 @@
             </div>
             {{/each}}
           </div>
-          <br />
-          <div class="keywords flexcol">
-            <label for="system.captain" class="resource-label flexlarge align-left" data-label="{{system.captain}}">Captain</label>
-          {{> "systems/draw-steel-unofficial/templates/actor/parts/actor-captain.hbs"}}
-          </div>
         </aside>
 
         {{!-- For the main features list, span the right two columns --}}
@@ -118,7 +113,6 @@
           module/helpers/templates.mjs --}}
           {{> "systems/draw-steel-unofficial/templates/actor/parts/actor-features.hbs"}}
         </section>
-
       </section>
     </div>
 
