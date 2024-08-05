@@ -9,10 +9,12 @@
     },
     "Attribute": {
       "Lvl": { "long": "Level", "abbr": "lvl" },
+      "Stb": { "long": "Stability", "abbr": "stb" }
+    },
+    "Physical": {
       "Siz": { "long": "Size", "abbr": "siz" },
       "Wgt": { "long": "Weight", "abbr": "wgt" },
       "Rch": { "long": "Reach", "abbr": "rch" },
-      "Stb": { "long": "Stability", "abbr": "stb" },
       "Spd": { "long": "Speed", "abbr": "spd" }
     },
     "SheetLabels": {

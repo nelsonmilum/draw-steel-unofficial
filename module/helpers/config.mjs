@@ -26,18 +26,27 @@ DRAW_STEEL.abilityAbbreviations = {
  */
 DRAW_STEEL.attributes = {
   lvl: 'DRAW_STEEL.Attribute.Lvl.long',
-  siz: 'DRAW_STEEL.Attribute.Siz.long',
-  wgt: 'DRAW_STEEL.Attribute.Wgt.long',
-  rch: 'DRAW_STEEL.Attribute.Rch.long',
   stb: 'DRAW_STEEL.Attribute.Stb.long',
-  spd: 'DRAW_STEEL.Attribute.Spd.long',
 };
 
 DRAW_STEEL.attributeAbbreviations = {
   lvl: 'DRAW_STEEL.Attribute.Lvl.abbr',
-  siz: 'DRAW_STEEL.Attribute.Siz.abbr',
-  wgt: 'DRAW_STEEL.Attribute.Wgt.abbr',
-  rch: 'DRAW_STEEL.Attribute.Rch.abbr',
   stb: 'DRAW_STEEL.Attribute.Stb.abbr',
-  spd: 'DRAW_STEEL.Attribute.Spd.abbr',
 };
+
+/**
+ * Set of physical characteristics used by ancetry
+ */
+DRAW_STEEL.physicals = {
+  siz: 'DRAW_STEEL.Physical.Siz.long',
+  wgt: 'DRAW_STEEL.Physical.Wgt.long',
+  rch: 'DRAW_STEEL.Physical.Rch.long',
+  spd: 'DRAW_STEEL.Physical.Spd.long',
+}
+
+DRAW_STEEL.physicalAbbreviations = {
+  siz: 'DRAW_STEEL.Physical.Siz.abbr',
+  wgt: 'DRAW_STEEL.Physical.Wgt.abbr',
+  rch: 'DRAW_STEEL.Physical.Rch.abbr',
+  spd: 'DRAW_STEEL.Physical.Spd.abbr',
+}
