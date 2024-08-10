@@ -224,3 +224,30 @@ DRAW_STEEL.loreskillAbbreviations = {
   sct: 'DRAW_STEEL.Skill.Lore.Sct.abbr',
   tms: 'DRAW_STEEL.Skill.Lore.Tms.abbr',
 };
+
+DRAW_STEEL.creatureroles = {
+  amb: 'DRAW_STEEL.Creature.Role.Amb.long',
+  art: 'DRAW_STEEL.Creature.Role.Art.long',
+  bss: 'DRAW_STEEL.Creature.Role.Bss.long',
+  bru: 'DRAW_STEEL.Creature.Role.Bru.long',
+  con: 'DRAW_STEEL.Creature.Role.Con.long',
+  def: 'DRAW_STEEL.Creature.Role.Def.long',
+  har: 'DRAW_STEEL.Creature.Role.Har.long',
+  hex: 'DRAW_STEEL.Creature.Role.Hex.long',
+  sup: 'DRAW_STEEL.Creature.Role.Sup.long',
+  mou: 'DRAW_STEEL.Creature.Role.Mou.long',
+  sol: 'DRAW_STEEL.Creature.Role.Sol.long',
+};
+DRAW_STEEL.creatureroleAbbreviations = {
+  amb: 'DRAW_STEEL.Creature.Role.Amb.abbr',
+  art: 'DRAW_STEEL.Creature.Role.Art.abbr',
+  bss: 'DRAW_STEEL.Creature.Role.Bss.abbr',
+  bru: 'DRAW_STEEL.Creature.Role.Bru.abbr',
+  con: 'DRAW_STEEL.Creature.Role.Con.abbr',
+  def: 'DRAW_STEEL.Creature.Role.Def.abbr',
+  har: 'DRAW_STEEL.Creature.Role.Har.abbr',
+  hex: 'DRAW_STEEL.Creature.Role.Hex.abbr',
+  sup: 'DRAW_STEEL.Creature.Role.Sup.abbr',
+  mou: 'DRAW_STEEL.Creature.Role.Mou.abbr',
+  sol: 'DRAW_STEEL.Creature.Role.Sol.abbr',
+};

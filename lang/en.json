@@ -112,6 +112,22 @@
       }
     },
 
+    "Creature": {
+      "Role": {
+        "Amb": { "long": "Ambusher", "abbr": "amb" },
+        "Art": { "long": "Artillery", "abbr": "art" },
+        "Bss": { "long": "Boss", "abbr": "bss" },
+        "Bru": { "long": "Brute", "abbr": "bru" },
+        "Con": { "long": "Controller", "abbr": "con" },
+        "Def": { "long": "Defender", "abbr": "def" },
+        "Har": { "long": "Harrier", "abbr": "har" },
+        "Hex": { "long": "Hexer", "abbr": "hex" },
+        "Sup": { "long": "Support", "abbr": "sup" },
+        "Mou": { "long": "Mount", "abbr": "mou" },
+        "Sol": { "long": "Solo", "abbr": "sol" }
+      }
+    },
+
     "SheetLabels": {
       "Actor": "DrawSteel Actor Sheet",
       "Item": "DrawSteel Item Sheet"
