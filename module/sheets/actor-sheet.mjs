@@ -51,14 +51,10 @@ export class DrawSteelActorSheet extends ActorSheet {
       this._prepareItems(context);
       this._prepareCharacterData(context);
     }
+
     // Prepare NPC data and items.
     if (actorData.type == 'npc') {
       this._prepareItems(context);
-    }
-    // Prepare environment data and items.
-    if (actorData.type == 'environment') {
-      this._prepareItems(context);
-      // this._prepareEnviroData(context);
     }
 
     // Add roll data for TinyMCE editors.
@@ -82,6 +78,10 @@ export class DrawSteelActorSheet extends ActorSheet {
    * @return {undefined}
    */
   _prepareCharacterData(context) {
+    // Handle ability scores.
+    // for (let [k, v] of Object.entries(context.system.abilities)) {
+    //   v.label = game.i18n.localize(CONFIG.DRAW_STEEL.abilities[k]) ?? k;
+    // }
   }
 
   /**
@@ -196,7 +196,7 @@ export class DrawSteelActorSheet extends ActorSheet {
     // Get the type of item to create.
     const type = header.dataset.type;
     // Grab any data associated with this control.
-    const data = foundry.utils.duplicate(header.dataset);
+    const data = duplicate(header.dataset);
     // Initialize a default name.
     const name = `New ${type.capitalize()}`;
     // Prepare the item object.

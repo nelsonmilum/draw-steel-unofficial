@@ -31,7 +31,7 @@ Hooks.once('init', function () {
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: '0',
+    formula: 0,
     decimals: 0,
   };
 
@@ -43,26 +43,12 @@ Hooks.once('init', function () {
   // with the Character/NPC as part of super.defineSchema()
   CONFIG.Actor.dataModels = {
     character: models.DrawSteelCharacter,
-    npc: models.DrawSteelNPC,
-    group: models.DrawSteelGroup,
-    vehicle: models.DrawSteelVehicle,
-    environment: models.DrawSteelEnvironment
+    npc: models.DrawSteelNPC
   }
   CONFIG.Item.documentClass = DrawSteelItem;
   CONFIG.Item.dataModels = {
     item: models.DrawSteelItem,
-    weapon: models.DrawSteelWeapon,
-    equipment: models.DrawSteelEquipment,
-    consumable: models.DrawSteelConsumable,
-    loot: models.DrawSteelLoot,
-    ancestry: models.DrawSteelAncestry,
-    career: models.DrawSteelCareer,
-    culture: models.DrawSteelCulture,
-    complication: models.DrawSteelComplication,
-    class: models.DrawSteelClass,
     feature: models.DrawSteelFeature,
-    kit: models.DrawSteelKit,
-    ability: models.DrawSteelAbility,
     spell: models.DrawSteelSpell
   }
 

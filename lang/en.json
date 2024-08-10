@@ -8,15 +8,110 @@
       "Prs": { "long": "Presence", "abbr": "prs" }
     },
     "Attribute": {
-      "Lvl": { "long": "Level", "abbr": "lvl" },
-      "Stb": { "long": "Stability", "abbr": "stb" }
-    },
-    "Physical": {
       "Siz": { "long": "Size", "abbr": "siz" },
       "Wgt": { "long": "Weight", "abbr": "wgt" },
       "Rch": { "long": "Reach", "abbr": "rch" },
-      "Spd": { "long": "Speed", "abbr": "spd" }
+      "Spd": { "long": "Speed", "abbr": "spd" },
+      "Lvl": { "long": "Level", "abbr": "lvl" }
     },
+
+    "Immunity": {
+      "Acd": { "long": "Acid", "abbr": "acd" },
+      "Cld": { "long": "Cold", "abbr": "cld" },
+      "Crr": { "long": "Corruption", "abbr": "crr" },
+      "Fir": { "long": "Fire", "abbr": "fir" },
+      "Hly": { "long": "Holy", "abbr": "hly" },
+      "Lgh": { "long": "Lightning", "abbr": "lgh" },
+      "Psn": { "long": "Poison", "abbr": "psn" },
+      "Psy": { "long": "Psychic", "abbr": "psy" },
+      "Son": { "long": "Sonic", "abbr": "son" },
+      "Wea": { "long": "Weapon", "abbr": "wea" },
+      "Mgc": { "long": "Magic", "abbr": "mgc" },
+      "Psi": { "long": "Psionic", "abbr": "psi" }
+    },
+
+    "Weakness": {
+      "Acd": { "long": "Acid", "abbr": "acd" },
+      "Cld": { "long": "Cold", "abbr": "cld" },
+      "Crr": { "long": "Corruption", "abbr": "crr" },
+      "Fir": { "long": "Fire", "abbr": "fir" },
+      "Hly": { "long": "Holy", "abbr": "hly" },
+      "Lgh": { "long": "Lightning", "abbr": "lgh" },
+      "Psn": { "long": "Poison", "abbr": "psn" },
+      "Psy": { "long": "Psychic", "abbr": "psy" },
+      "Son": { "long": "Sonic", "abbr": "son" },
+      "Wea": { "long": "Weapon", "abbr": "wea" },
+      "Mgc": { "long": "Magic", "abbr": "mgc" },
+      "Psi": { "long": "Psionic", "abbr": "psi" }
+    },
+
+    "Skill": {
+      "Crafting": {
+        "Alc": { "long": "Alchemy", "abbr": "alc" },
+        "Arc": { "long": "Architecture", "abbr": "arc" },
+        "Blc": { "long": "Blacksmithing", "abbr": "blc" },
+        "Flt": { "long": "Fletching", "abbr": "flt" },
+        "Frg": { "long": "Forgery", "abbr": "frg" },
+        "Jwl": { "long": "Jewelry", "abbr": "jwl" },
+        "Mch": { "long": "Mechanics", "abbr": "mch" },
+        "Tlr": { "long": "Tailoring", "abbr": "tlr" }
+      },
+      "Exploration": {
+        "Clm": { "long": "Climb", "abbr": "clm" },
+        "Drv": { "long": "Drive", "abbr": "drv" },
+        "End": { "long": "Endurance", "abbr": "end" },
+        "Gym": { "long": "Gymnastics", "abbr": "gym" },
+        "Hea": { "long": "Heal", "abbr": "hea" },
+        "Jmp": { "long": "Jump", "abbr": "jmp" },
+        "Lft": { "long": "Lift", "abbr": "lft" },
+        "Nvg": { "long": "Navigate", "abbr": "nvg" },
+        "Rde": { "long": "Ride", "abbr": "rde" },
+        "Swm": { "long": "Swim", "abbr": "swm" }
+      },
+      "Interpersonal": {
+        "Brg": { "long": "Brag", "abbr": "brg" },
+        "Emp": { "long": "Empathize", "abbr": "emp" },
+        "Flr": { "long": "Flirt", "abbr": "flr" },
+        "Gmb": { "long": "Gamble", "abbr": "gmb" },
+        "Hnd": { "long": "Handel Animals", "abbr": "hnd" },
+        "Int": { "long": "Interrogate", "abbr": "int" },
+        "Inm": { "long": "Intimidate", "abbr": "inm" },
+        "Led": { "long": "Lead", "abbr": "led" },
+        "Lie": { "long": "Lie", "abbr": "lie" },
+        "Mus": { "long": "Music", "abbr": "mus" },
+        "Prf": { "long": "Performance", "abbr": "prf" },
+        "Prs": { "long": "Persuade", "abbr": "prs" },
+        "Rpr": { "long": "Read Person", "abbr": "rpr" }
+      },
+      "Intrigue": {
+        "Alr": { "long": "Alertness", "abbr": "alr" },
+        "Cob": { "long": "Conceal Object", "abbr": "cob" },
+        "Dsg": { "long": "Disguise", "abbr": "dsg" },
+        "Evs": { "long": "Eavesdrop", "abbr": "evs" },
+        "Esc": { "long": "Escape Artist", "abbr": "esc" },
+        "Hid": { "long": "Hide", "abbr": "hid" },
+        "Pck": { "long": "Pick Lock", "abbr": "pck" },
+        "Ppk": { "long": "Pick Pocket", "abbr": "ppk" },
+        "Sbt": { "long": "Sabotage", "abbr": "sbt" },
+        "Src": { "long": "Search", "abbr": "src" },
+        "Snk": { "long": "Sneak", "abbr": "snk" },
+        "Trk": { "long": "Track", "abbr": "trk" }
+      },
+      "Lore": {
+        "Clt": { "long": "Culture", "abbr": "clt" },
+        "Cun": { "long": "Criminal Underworld", "abbr": "cun" },
+        "Hst": { "long": "History", "abbr": "hst" },
+        "Mgc": { "long": "Magic", "abbr": "mgc" },
+        "Mns": { "long": "Monsters", "abbr": "mns" },
+        "Ntr": { "long": "Nature", "abbr": "ntr" },
+        "Psn": { "long": "Psionics", "abbr": "psn" },
+        "Rlg": { "long": "Religion", "abbr": "rlg" },
+        "Rmr": { "long": "Rumors", "abbr": "rmr" },
+        "Sct": { "long": "Society", "abbr": "sct" },
+        "Tms": { "long": "Timescape", "abbr": "tms" }
+      }
+    },
+
     "SheetLabels": {
       "Actor": "DrawSteel Actor Sheet",
       "Item": "DrawSteel Item Sheet"
@@ -39,25 +134,11 @@
   "TYPES": {
     "Actor": {
       "character": "Character",
-      "npc": "NPC",
-      "group": "Group",
-      "environment": "Environmental Effect",
-      "vehicle": "Vehicle"
+      "npc": "NPC"
     },
     "Item": {
       "item": "Item",
-      "weapon": "Weapon",
-      "equipment": "Equipment",
-      "consumable": "Consumable",
-      "loot": "Loot",
-      "ancestry": "Ancestry",
-      "career": "Career",
-      "culture": "Culture",
-      "complication": "Complication",
-      "class": "Class",
       "feature": "Feature",
-      "kit": "Kit",
-      "ability": "Ability",
       "spell": "Spell"
     }
   }

@@ -1,55 +1,54 @@
 export default class DrawSteelActorBase extends foundry.abstract.TypeDataModel {
+
   static defineSchema() {
     const fields = foundry.data.fields;
     const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = {};
 
     schema.stamina = new fields.SchemaField({
-      value: new fields.NumberField({
-        ...requiredInteger,
-        initial: 10,
-        min: 0,
-      }),
+      value: new fields.NumberField({ ...requiredInteger, initial: 10, min: -10 }),
       max: new fields.NumberField({ ...requiredInteger, initial: 10 }),
-      winded: new fields.NumberField({ ...requiredInteger, initial: 0 }),
+      winded: new fields.NumberField({ ...requiredInteger, initial: 0 })
     });
-
-    schema.biography = new fields.StringField({ required: true, blank: true });
-
-    schema.modifiers = new fields.StringField({ required: false, blank: true });
+    schema.biography = new fields.StringField({ required: true, blank: true }); // equivalent to passing ({initial: ""}) for StringFields
 
     // Iterate over ability names and create a new SchemaField for each.
-    schema.abilities = new fields.SchemaField(
-      Object.keys(CONFIG.DRAW_STEEL.abilities).reduce((obj, ability) => {
-        obj[ability] = new fields.SchemaField({
-          value: new fields.NumberField({
-            ...requiredInteger,
-            initial: 0,
-            min: -5,
-            max: 5,
-          }),
-          label: new fields.StringField({ required: true, blank: true }),
-        });
-        return obj;
-      }, {})
-    );
+    schema.abilities = new fields.SchemaField(Object.keys(CONFIG.DRAW_STEEL.abilities).reduce((obj, ability) => {
+      obj[ability] = new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: -5 }),
+        label: new fields.StringField({ required: true, blank: true })
+      });
+      return obj;
+    }, {}));
 
+    // Iterate over attributes and create a new SchemaField for each.
+    schema.attributes = new fields.SchemaField(Object.keys(CONFIG.DRAW_STEEL.attributes).reduce((obj, attribute) => {
+      obj[attribute] = new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        label: new fields.StringField({ required: true, blank: true })
+      });
+      return obj;
+    }, {}));
 
-    // Iterate over attribute names and create a new SchemaField for each.
-    schema.attributes = new fields.SchemaField(
-      Object.keys(CONFIG.DRAW_STEEL.attributes).reduce((obj, attribute) => {
-        obj[attribute] = new fields.SchemaField({
-          value: new fields.NumberField({
-            ...requiredInteger,
-            initial: 0,
-            min: 0,
-          }),
-          label: new fields.StringField({ required: true, blank: true }),
-        });
-        return obj;
-      }, {})
-    );
-    
+    // Iterate over immunities and create a new SchemaField for each.
+    schema.immunities = new fields.SchemaField(Object.keys(CONFIG.DRAW_STEEL.immunities).reduce((obj, immunity) => {
+      obj[immunity] = new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        label: new fields.StringField({ required: true, blank: true })
+      });
+      return obj;
+    }, {}));
+
+    // Iterate over weaknesses and create a new SchemaField for each.
+    schema.weaknesses = new fields.SchemaField(Object.keys(CONFIG.DRAW_STEEL.weaknesses).reduce((obj, weakness) => {
+      obj[weakness] = new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        label: new fields.StringField({ required: true, blank: true })
+      });
+      
+      return obj;
+    }, {}));
+
     return schema;
   }
 }
