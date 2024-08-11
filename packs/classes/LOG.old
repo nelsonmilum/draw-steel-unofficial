@@ -1,16 +1,5 @@
-2024/08/10-19:26:33.764567 17117f000 Recovering log #7
-2024/08/10-19:26:33.764596 17117f000 Level-0 table #9: started
-2024/08/10-19:26:33.764744 17117f000 Level-0 table #9: 722 bytes OK
-2024/08/10-19:26:33.765115 17117f000 Delete type=0 #7
-2024/08/10-19:26:33.765307 17117f000 Delete type=3 #6
-2024/08/10-19:26:33.766246 171a17000 Level-0 table #12: started
-2024/08/10-19:26:33.766395 171a17000 Level-0 table #12: 1133 bytes OK
-2024/08/10-19:26:33.766467 171a17000 Delete type=0 #10
-2024/08/10-19:26:33.766530 171a17000 Manual compaction at level-0 from '!items!0f54ecc1-ce5a-4111-badf-7cec16767d76' @ 72057594037927935 : 1 .. '!items!8e2a3d84-44b7-42a8-9dec-9e1677a93314' @ 0 : 0; will stop at '!items!pvEzGSv71zBhaolc' @ 2 : 1
-2024/08/10-19:26:33.766537 171a17000 Compacting 2@0 + 0@1 files
-2024/08/10-19:26:33.766687 171a17000 Generated table #13@0: 9 keys, 1133 bytes
-2024/08/10-19:26:33.766692 171a17000 Compacted 2@0 + 0@1 files => 1133 bytes
-2024/08/10-19:26:33.766744 171a17000 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/08/10-19:26:33.766779 171a17000 Delete type=2 #12
-2024/08/10-19:26:33.766828 171a17000 Delete type=2 #9
-2024/08/10-19:26:33.766878 171a17000 Manual compaction at level-0 from '!items!pvEzGSv71zBhaolc' @ 2 : 1 .. '!items!8e2a3d84-44b7-42a8-9dec-9e1677a93314' @ 0 : 0; will stop at (end)
+2024/08/10-21:36:31.776909 313784000 Log #21: 0 ops saved to Table #24 OK
+2024/08/10-21:36:31.777045 313784000 Archiving /Users/nelsonmilum/Library/Application Support/FoundryVTT/Data/systems/draw-steel-unofficial/packs/classes/000021.log: OK
+2024/08/10-21:36:31.777101 313784000 Table #5: 8 entries OK
+2024/08/10-21:36:31.777141 313784000 Table #23: 10 entries OK
+2024/08/10-21:36:31.777481 313784000 **** Repaired leveldb /Users/nelsonmilum/Library/Application Support/FoundryVTT/Data/systems/draw-steel-unofficial/packs/classes; recovered 2 files; 2469 bytes. Some data may have been lost. ****
