@@ -150,7 +150,8 @@
   "TYPES": {
     "Actor": {
       "character": "Character",
-      "npc": "NPC"
+      "npc": "NPC",
+      "environmentalEffect": "Environmental Effect"
     },
     "Item": {
       "item": "Item",

@@ -43,7 +43,8 @@ Hooks.once('init', function () {
   // with the Character/NPC as part of super.defineSchema()
   CONFIG.Actor.dataModels = {
     character: models.DrawSteelCharacter,
-    npc: models.DrawSteelNPC
+    npc: models.DrawSteelNPC,
+    environmentalEffect: models.DrawSteelEnvironmentalEffect,
   }
   CONFIG.Item.documentClass = DrawSteelItem;
   CONFIG.Item.dataModels = {
