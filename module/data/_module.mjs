@@ -8,4 +8,7 @@ export {default as DrawSteelEnvironmentalEffect} from "./environmental-effect.mj
 export {default as DrawSteelItemBase} from "./item-base.mjs";
 export {default as DrawSteelItem} from "./item.mjs";
 export {default as DrawSteelFeature} from "./feature.mjs";
+export {default as DrawSteelClass} from "./class.mjs";
+export {default as DrawSteelAncestry} from "./ancestry.mjs";
+export {default as DrawSteelKit} from "./kit.mjs";
 export {default as DrawSteelSpell} from "./spell.mjs";

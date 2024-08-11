@@ -136,7 +136,11 @@
       "Spell": {
         "SpellLVL": "Level {level} Spells",
         "AddLVL": "Add LVL {level}"
-      }
+      },
+      "Feature": "Feature",
+      "Class": "Class",
+      "Ancestry": "Ancestry",
+      "Kit": "Kit"
     },
     "Effect": {
       "Source": "Source",
@@ -156,6 +160,9 @@
     "Item": {
       "item": "Item",
       "feature": "Feature",
+      "class": "Class",
+      "ancestry": "Ancestry",
+      "kit": "Kit",
       "spell": "Spell"
     }
   }

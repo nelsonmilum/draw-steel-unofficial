@@ -15,6 +15,7 @@ import * as models from './data/_module.mjs';
 /* -------------------------------------------- */
 
 Hooks.once('init', function () {
+
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
   game.drawsteelunofficial = {
@@ -50,6 +51,9 @@ Hooks.once('init', function () {
   CONFIG.Item.dataModels = {
     item: models.DrawSteelItem,
     feature: models.DrawSteelFeature,
+    class: models.DrawSteelClass,
+    kit: models.DrawSteelKit,
+    ancestry: models.DrawSteelAncestry,
     spell: models.DrawSteelSpell
   }
 
