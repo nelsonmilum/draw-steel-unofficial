@@ -139,6 +139,9 @@
       },
       "Feature": "Feature",
       "Class": "Class",
+      "Culture": "Culture",
+      "Career": "Career",
+      "Complication": "Complication",
       "Ancestry": "Ancestry",
       "Kit": "Kit"
     },
@@ -161,6 +164,9 @@
       "item": "Item",
       "feature": "Feature",
       "class": "Class",
+      "culture": "Culture",
+      "career": "Career",
+      "complication": "Complication",
       "ancestry": "Ancestry",
       "kit": "Kit",
       "spell": "Spell"
