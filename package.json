@@ -9,9 +9,6 @@
     "build:db": "node ./src/packs/packs.mjs package pack",
     "build:json": "node ./src/packs/packs.mjs package unpack"
   },
-  "browserslist": [
-    "last 3 versions"
-  ],
   "author": "Needless Mustard",
   "license": "MIT",
   "private": true,

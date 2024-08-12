@@ -6,6 +6,14 @@ export default class DrawSteelCulture extends DrawSteelItemBase {
     const fields = foundry.data.fields;
     const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = super.defineSchema();
+
+    // Language
+
+    // Environment - Skills
+
+    // Organization - Skills
+
+    // Upbringing - Skills
   
     return schema;
   }

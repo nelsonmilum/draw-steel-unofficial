@@ -1,5 +1,11 @@
 # CHANGELOG
 
-## 1.2.0
+## 0.0.1
+First attempts
 
-- Add support for Foundry v10
+## ...
+ All changelogs live in git commits until release
+
+ ## 1.0.0
+
+ Initial Release!

@@ -52,6 +52,9 @@ Hooks.once('init', function () {
     item: models.DrawSteelItem,
     feature: models.DrawSteelFeature,
     class: models.DrawSteelClass,
+    culture: models.DrawSteelCulture,
+    complication: models.DrawSteelComplication,
+    career: models.DrawSteelCareer,
     kit: models.DrawSteelKit,
     ancestry: models.DrawSteelAncestry,
     spell: models.DrawSteelSpell
